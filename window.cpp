@@ -31,6 +31,11 @@ void WindowApp::run(){
         }
 }
 
+std::pair<int,int> WindowApp::get_canvas(){
+    std::pair<int,int> canvas_sizes = {CANVAS_WIDTH,CANVAS_HEIGHT};
+    return canvas_sizes;
+}
+
 void WindowApp::processEvents() {
     sf::Event event;
     while (window.pollEvent(event)) {
@@ -39,10 +44,14 @@ void WindowApp::processEvents() {
         }
         if(event.type == sf::Event::KeyPressed){
             if(event.key.code == sf::Keyboard::Space){
-                if(shoot_clock.getElapsedTime().asSeconds() >= 0.5f){
+                if(shoot_clock.getElapsedTime().asSeconds() >= 0.01f){
                     const int ADJUSTMENT_VAL =5;
                     //create new ball and place at the tip of cannon
                     std::unique_ptr<Ball> new_ball = std::make_unique<Ball>(cannon_center.angle);
+
+                    new_ball->canvas_height = CANVAS_HEIGHT;
+                    new_ball->canvas_width = CANVAS_WIDTH;
+
                     float initial_ball_y = (CANVAS_HEIGHT/2.f +(CANNON_WIDTH)*sin(cannon_center.angle));
                     float initial_ball_x = (CANNON_OFFSET+(CANNON_WIDTH)*cos(cannon_center.angle))-ADJUSTMENT_VAL;
                     Point initial_ball_position = {initial_ball_x,initial_ball_y};

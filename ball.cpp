@@ -36,15 +36,27 @@ void Ball::update_ball(sf::Time delta_t){
 
     float fin_vel_x = velocity.first + acceleration.first *delta_t.asSeconds();
     float fin_vel_y = velocity.second - acceleration.second* delta_t.asSeconds();
-    if(fin_vel_x<0){
-        fin_vel_x=0;
-    }
+    
     float fin_pos_x = 1.f/2.f * (velocity.first + fin_vel_x)*delta_t.asSeconds() + position.x;
     float fin_pos_y = 1.f/2.f * (velocity.second+ fin_vel_y)*delta_t.asSeconds() + position.y;
-    
+ 
     sf::CircleShape ball = this->ball_shape;
+    //check if ball is hitting right wall
+    if(fin_pos_x+ 2*ball.getRadius() >= canvas_width){
+        fin_vel_x = -fin_vel_x;
 
+    }//check if ball is hitting left wall
+    if (fin_pos_x <= 0){
+        fin_vel_x = -fin_vel_x;
 
+    } //check if ball is hitting celing
+    if (fin_pos_y<= 0){
+        fin_vel_y = -fin_vel_y;
+
+    } //check if ball is hitting floor
+    if (fin_pos_y + 2*ball.getRadius() >= canvas_height){
+        fin_vel_y = -fin_vel_y;
+    }
 
     this->velocity = {fin_vel_x, fin_vel_y};
     this->position = {fin_pos_x, fin_pos_y};

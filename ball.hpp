@@ -1,3 +1,4 @@
+#pragma once
 #include "point.hpp"
 #include <utility>
 #include <SFML/Graphics.hpp>
@@ -5,6 +6,9 @@
 
 class Ball{
     public:
+        int canvas_width;
+        int canvas_height;
+
         Ball(float init_angle);
         void set_ball_position(Point ball_position);
         sf::CircleShape& get_shape();
@@ -13,7 +17,7 @@ class Ball{
 
     private:
         const float GRAVITY = -9.807;
-        const float INITIAL_SPEED = 350.f;
+        const float INITIAL_SPEED = 700.f;
         const float BALL_MASS = 0.2f; // kg/pixel
 
         sf::CircleShape ball_shape;

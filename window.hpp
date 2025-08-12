@@ -2,14 +2,16 @@
 
 #include "point.hpp"
 #include "ball.hpp"
+#include <utility>
 #include <SFML/Graphics.hpp>
 #include <memory>
 
 class WindowApp{
     public:
     WindowApp();
-    
     void run();
+
+    std::pair<int,int> get_canvas();
 
     private:
         void processEvents();
@@ -34,5 +36,4 @@ class WindowApp{
         sf::Sprite sprite;
 
         std::vector<std::unique_ptr<Ball>> balls;
-
 };
