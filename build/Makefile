@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/igorchernenko/Desktop/c++_code/ball_shooter
+CMAKE_SOURCE_DIR = /home/igorchernenko/Desktop/c++_code/1812-Overture
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/igorchernenko/Desktop/c++_code/ball_shooter/build
+CMAKE_BINARY_DIR = /home/igorchernenko/Desktop/c++_code/1812-Overture/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igorchernenko/Desktop/c++_code/ball_shooter/build/CMakeFiles /home/igorchernenko/Desktop/c++_code/ball_shooter/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/igorchernenko/Desktop/c++_code/1812-Overture/build/CMakeFiles /home/igorchernenko/Desktop/c++_code/1812-Overture/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igorchernenko/Desktop/c++_code/ball_shooter/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/igorchernenko/Desktop/c++_code/1812-Overture/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ball_shooter
+# Target rules for targets named 1812-Overture
 
 # Build rule for target.
-ball_shooter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ball_shooter
-.PHONY : ball_shooter
+1812-Overture: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1812-Overture
+.PHONY : 1812-Overture
 
 # fast build rule for target.
-ball_shooter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_shooter.dir/build.make CMakeFiles/ball_shooter.dir/build
-.PHONY : ball_shooter/fast
+1812-Overture/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/build
+.PHONY : 1812-Overture/fast
+
+ball.o: ball.cpp.o
+.PHONY : ball.o
+
+# target to build an object file
+ball.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/ball.cpp.o
+.PHONY : ball.cpp.o
+
+ball.i: ball.cpp.i
+.PHONY : ball.i
+
+# target to preprocess a source file
+ball.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/ball.cpp.i
+.PHONY : ball.cpp.i
+
+ball.s: ball.cpp.s
+.PHONY : ball.s
+
+# target to generate assembly for a file
+ball.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/ball.cpp.s
+.PHONY : ball.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_shooter.dir/build.make CMakeFiles/ball_shooter.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +166,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_shooter.dir/build.make CMakeFiles/ball_shooter.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_shooter.dir/build.make CMakeFiles/ball_shooter.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 window.o: window.cpp.o
@@ -158,7 +182,7 @@ window.o: window.cpp.o
 
 # target to build an object file
 window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_shooter.dir/build.make CMakeFiles/ball_shooter.dir/window.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/window.cpp.o
 .PHONY : window.cpp.o
 
 window.i: window.cpp.i
@@ -166,7 +190,7 @@ window.i: window.cpp.i
 
 # target to preprocess a source file
 window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_shooter.dir/build.make CMakeFiles/ball_shooter.dir/window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/window.cpp.i
 .PHONY : window.cpp.i
 
 window.s: window.cpp.s
@@ -174,7 +198,7 @@ window.s: window.cpp.s
 
 # target to generate assembly for a file
 window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_shooter.dir/build.make CMakeFiles/ball_shooter.dir/window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/window.cpp.s
 .PHONY : window.cpp.s
 
 # Help Target
@@ -185,7 +209,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ball_shooter"
+	@echo "... 1812-Overture"
+	@echo "... ball.o"
+	@echo "... ball.i"
+	@echo "... ball.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

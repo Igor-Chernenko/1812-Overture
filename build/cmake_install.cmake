@@ -1,4 +1,4 @@
-# Install script for directory: /home/igorchernenko/Desktop/c++_code/ball_shooter
+# Install script for directory: /home/igorchernenko/Desktop/c++_code/1812-Overture
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/igorchernenko/Desktop/c++_code/ball_shooter/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/igorchernenko/Desktop/c++_code/1812-Overture/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
