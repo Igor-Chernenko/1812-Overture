@@ -153,6 +153,30 @@ ball.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/ball.cpp.s
 .PHONY : ball.cpp.s
 
+button.o: button.cpp.o
+.PHONY : button.o
+
+# target to build an object file
+button.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/button.cpp.o
+.PHONY : button.cpp.o
+
+button.i: button.cpp.i
+.PHONY : button.i
+
+# target to preprocess a source file
+button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/button.cpp.i
+.PHONY : button.cpp.i
+
+button.s: button.cpp.s
+.PHONY : button.s
+
+# target to generate assembly for a file
+button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1812-Overture.dir/build.make CMakeFiles/1812-Overture.dir/button.cpp.s
+.PHONY : button.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... ball.o"
 	@echo "... ball.i"
 	@echo "... ball.s"
+	@echo "... button.o"
+	@echo "... button.i"
+	@echo "... button.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

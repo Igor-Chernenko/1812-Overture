@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "1812-Overture.pdb"
   "CMakeFiles/1812-Overture.dir/ball.cpp.o"
   "CMakeFiles/1812-Overture.dir/ball.cpp.o.d"
+  "CMakeFiles/1812-Overture.dir/button.cpp.o"
+  "CMakeFiles/1812-Overture.dir/button.cpp.o.d"
   "CMakeFiles/1812-Overture.dir/main.cpp.o"
   "CMakeFiles/1812-Overture.dir/main.cpp.o.d"
   "CMakeFiles/1812-Overture.dir/window.cpp.o"

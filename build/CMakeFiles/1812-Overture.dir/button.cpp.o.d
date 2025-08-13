@@ -1,7 +1,6 @@
-CMakeFiles/1812-Overture.dir/main.cpp.o: \
- /home/igorchernenko/Desktop/c++_code/1812-Overture/main.cpp \
+CMakeFiles/1812-Overture.dir/button.cpp.o: \
+ /home/igorchernenko/Desktop/c++_code/1812-Overture/button.cpp \
  /usr/include/stdc-predef.h \
- /home/igorchernenko/Desktop/c++_code/1812-Overture/window.hpp \
  /home/igorchernenko/Desktop/c++_code/1812-Overture/button.hpp \
  /home/igorchernenko/Desktop/c++_code/1812-Overture/point.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
@@ -237,18 +236,4 @@ CMakeFiles/1812-Overture.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/igorchernenko/Desktop/c++_code/1812-Overture/ball.hpp \
- /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /usr/include/c++/13/memory \
- /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/ext/concurrence.h \
- /usr/include/c++/13/bits/shared_ptr_atomic.h \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/backward/auto_ptr.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h
+ /usr/include/SFML/Graphics/VertexBuffer.hpp

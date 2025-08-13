@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/igorchernenko/Desktop/c++_code/1812-Overture/ball.cpp" "CMakeFiles/1812-Overture.dir/ball.cpp.o" "gcc" "CMakeFiles/1812-Overture.dir/ball.cpp.o.d"
+  "/home/igorchernenko/Desktop/c++_code/1812-Overture/button.cpp" "CMakeFiles/1812-Overture.dir/button.cpp.o" "gcc" "CMakeFiles/1812-Overture.dir/button.cpp.o.d"
   "/home/igorchernenko/Desktop/c++_code/1812-Overture/main.cpp" "CMakeFiles/1812-Overture.dir/main.cpp.o" "gcc" "CMakeFiles/1812-Overture.dir/main.cpp.o.d"
   "/home/igorchernenko/Desktop/c++_code/1812-Overture/window.cpp" "CMakeFiles/1812-Overture.dir/window.cpp.o" "gcc" "CMakeFiles/1812-Overture.dir/window.cpp.o.d"
   )
