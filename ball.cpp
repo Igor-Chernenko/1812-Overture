@@ -11,7 +11,7 @@ Ball::Ball(float init_angle){
     std::mt19937 gen(rd());
 
     std::uniform_int_distribution<> color_dist(0,255);
-    std::uniform_int_distribution<> size_dist(5,20);
+    std::uniform_int_distribution<> size_dist(10,25);
 
     sf::CircleShape new_circle;
     new_circle.setFillColor(sf::Color(color_dist(gen), color_dist(gen), color_dist(gen)));
